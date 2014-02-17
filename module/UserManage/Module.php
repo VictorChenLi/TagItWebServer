@@ -9,9 +9,13 @@
 
 namespace UserManage;
 
+use UserManage\Model\UserProfile;
+use UserManage\Model\UserProfileTable;
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 use Zend\Mvc\ModuleRouteListener;
 use Zend\Mvc\MvcEvent;
+use Zend\Db\ResultSet\ResultSet;
+use Zend\Db\TableGateway\TableGateway;
 
 class Module implements AutoloaderProviderInterface
 {
@@ -39,16 +43,16 @@ class Module implements AutoloaderProviderInterface
     {
     	return array(
     			'factories' => array(
-    					'Album\Model\UserProfileTable' =>  function($sm) {
+    					'UserManage\Model\UserProfileTable' =>  function($sm) {
     						$tableGateway = $sm->get('UserProfileTableGateway');
-    						$table = new AlbumTable($tableGateway);
+    						$table = new UserProfileTable($tableGateway);
     						return $table;
     					},
     					'UserProfileTableGateway' => function ($sm) {
     						$dbAdapter = $sm->get('Zend\Db\Adapter\Adapter');
     						$resultSetPrototype = new ResultSet();
-    						$resultSetPrototype->setArrayObjectPrototype(new Album());
-    						return new TableGateway('userProfile', $dbAdapter, null, $resultSetPrototype);
+    						$resultSetPrototype->setArrayObjectPrototype(new UserProfile());
+    						return new TableGateway('profile', $dbAdapter, null, $resultSetPrototype);
     					},
     			),
     	);

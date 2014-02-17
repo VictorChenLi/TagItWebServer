@@ -2,41 +2,22 @@
 return array(
     'controllers' => array(
         'invokables' => array(
-            'UserManage\Controller\UserManageController' => 'UserManage\Controller\UserManageControllerController',
+            'UserManage\Controller\UserManage' => 'UserManage\Controller\UserManageController',
         ),
     ),
     'router' => array(
         'routes' => array(
-            'user-manage' => array(
-                'type'    => 'Literal',
+            'userprofile' => array(
+                'type'    => 'segment',
                 'options' => array(
-                    // Change this to something specific to your module
-                    'route'    => '/userManageController',
-                    'defaults' => array(
-                        // Change this value to reflect the namespace in which
-                        // the controllers for your module are found
-                        '__NAMESPACE__' => 'UserManage\Controller',
-                        'controller'    => 'UserManageController',
-                        'action'        => 'index',
+                    'route'    => '/userprofile[/][:action][/:id]',
+                    'constraints' => array(
+                        'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                        'id'     => '[0-9]+',
                     ),
-                ),
-                'may_terminate' => true,
-                'child_routes' => array(
-                    // This route is a sane default when developing a module;
-                    // as you solidify the routes for your module, however,
-                    // you may want to remove it and replace it with more
-                    // specific routes.
-                    'default' => array(
-                        'type'    => 'Segment',
-                        'options' => array(
-                            'route'    => '/[:controller[/:action]]',
-                            'constraints' => array(
-                                'controller' => '[a-zA-Z][a-zA-Z0-9_-]*',
-                                'action'     => '[a-zA-Z][a-zA-Z0-9_-]*',
-                            ),
-                            'defaults' => array(
-                            ),
-                        ),
+                    'defaults' => array(
+                        'controller' => 'UserManage\Controller\UserManage',
+                        'action'     => 'index',
                     ),
                 ),
             ),
@@ -44,7 +25,7 @@ return array(
     ),
     'view_manager' => array(
         'template_path_stack' => array(
-            'UserManage' => __DIR__ . '/../view',
+            'userprofile' => __DIR__ . '/../view',
         ),
     ),
 );

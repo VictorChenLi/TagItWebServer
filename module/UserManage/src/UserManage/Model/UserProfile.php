@@ -1,5 +1,5 @@
 <?php
-namespace UserManage\src\UserManage\Model;
+namespace UserManage\Model;
 
 use Zend\InputFilter\InputFilterAwareInterface;
 use Zend\InputFilter\InputFilterInterface;

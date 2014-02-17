@@ -10,14 +10,19 @@
 namespace UserManage\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
+use Zend\View\Model\ViewModel;
+use UserManage\Model\UserProfile;
 
-class UserManageControllerController extends AbstractActionController
+class UserManageController extends AbstractActionController
 {
     protected $userProfileTable;
     
     public function indexAction()
     {
-        return array();
+		return new ViewModel(array(
+            'userprofiles' => $this->getUserProfileTable()->fetchAll(),
+        ));
+
     }
 
     public function fooAction()
@@ -35,5 +40,29 @@ class UserManageControllerController extends AbstractActionController
     	}
     	return $this->userProfileTable;
     }
+    
+//     public function addAction()
+//     {
+//     	$form = new AlbumForm();
+//     	$form->get('submit')->setValue('Add');
+    
+//     	$request = $this->getRequest();
+//     	if ($request->isPost()) {
+//     		$album = new Album();
+//     		$form->setInputFilter($album->getInputFilter());
+//     		$form->setData($request->getPost());
+    
+//     		if ($form->isValid()) {
+//     			$album->exchangeArray($form->getData());
+//     			$this->getAlbumTable()->saveAlbum($album);
+    
+//     			// Redirect to list of albums
+//     			return $this->redirect()->toRoute('album');
+//     		}
+//     	}
+//     	return array('form' => $form);
+//     }
+
+    
     
 }
