@@ -13,6 +13,8 @@ use Zend\Mvc\Controller\AbstractActionController;
 
 class UserManageControllerController extends AbstractActionController
 {
+    protected $userProfileTable;
+    
     public function indexAction()
     {
         return array();
@@ -23,6 +25,15 @@ class UserManageControllerController extends AbstractActionController
         // This shows the :controller and :action parameters in default route
         // are working when you browse to /userManageController/user-manage-controller/foo
         return array();
+    }
+    
+    public function getUserProfileTable()
+    {
+    	if (!$this->userProfileTable) {
+    		$sm = $this->getServiceLocator();
+    		$this->userProfileTable= $sm->get('UserManage/Model/UserProfileTable');
+    	}
+    	return $this->userProfileTable;
     }
     
 }

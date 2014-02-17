@@ -34,6 +34,26 @@ class Module implements AutoloaderProviderInterface
     {
         return include __DIR__ . '/config/module.config.php';
     }
+    
+    public function getServiceConfig()
+    {
+    	return array(
+    			'factories' => array(
+    					'Album\Model\UserProfileTable' =>  function($sm) {
+    						$tableGateway = $sm->get('UserProfileTableGateway');
+    						$table = new AlbumTable($tableGateway);
+    						return $table;
+    					},
+    					'UserProfileTableGateway' => function ($sm) {
+    						$dbAdapter = $sm->get('Zend\Db\Adapter\Adapter');
+    						$resultSetPrototype = new ResultSet();
+    						$resultSetPrototype->setArrayObjectPrototype(new Album());
+    						return new TableGateway('userProfile', $dbAdapter, null, $resultSetPrototype);
+    					},
+    			),
+    	);
+    }
+    
 
     public function onBootstrap(MvcEvent $e)
     {
