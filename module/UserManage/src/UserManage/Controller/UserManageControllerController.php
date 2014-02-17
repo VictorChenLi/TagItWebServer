@@ -24,4 +24,5 @@ class UserManageControllerController extends AbstractActionController
         // are working when you browse to /userManageController/user-manage-controller/foo
         return array();
     }
+    
 }
