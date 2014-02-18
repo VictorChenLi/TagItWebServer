@@ -5810,4 +5810,15 @@ padding-bottom: 20px;
 padding-left: 20px;
 line-height: 60px;
 }
+.emptybox {
+background-color:transparent;
+opacity: 0;
+line-height: 35px;
+}
+.picturebox {
+overflow:hidden;
+width: 250px;
+height:333px;
+width: 100%;
+}
 /*# sourceMappingURL=bootstrap.css.map */
