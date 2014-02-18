@@ -12,10 +12,15 @@ class account_security_tablegateway{
 	}
 
 	function select_by_id($id) {
-		return select("uid = " + $id);
+		$account_security = new account_security(); 
+		$sql = "SELECT * FROM account_security WHERE uid = " + $id;
+		$db = new db(); 
+		$account_security->exchangeArray($db->runQuery($sql)); 
+		return $account_security; 
 	}
 
 	function insert($account_security) {
+		$db = new db();
 		$sql = "INSERT INTO account_security ('uid', 'username', 'password', 'security_question', 'answer', 'verified_account') 
 			    VALUES('"+$account_security->getUid()+"','"+$account_security->getUsername()+"','"+$account_security->getPassword()
 			    +"','"+$account_security->getSecurity_question()+"','"+$account_security->getAnswer()+"','"+$account_security->getVerified_account()+"')";

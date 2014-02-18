@@ -1,6 +1,6 @@
 <?php 
 
-class sign_up{
+class account_security{
 	
 	private $uid;
     private $username;
