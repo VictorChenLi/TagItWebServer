@@ -5801,6 +5801,8 @@ background-image:url('background1.jpg');
 opacity: 0.9;
 /* set font color to white */ 
 color: white;
+/*font-family:"Times New Roman", Times, serif; /* FONT */
+font-size:100%; /* FONT SIZE */
 }
 .profilebox {
 color: black;

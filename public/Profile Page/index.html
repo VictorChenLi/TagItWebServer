@@ -10,9 +10,23 @@
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.css.map">
 		<link rel="stylesheet" href="bootstrap/fonts/glyphicons-halflings-regular.eot">
 		<link rel="stylesheet" href="bootstrap/js/bootstrap.js">
-		<style type="text/css">
+		<script src="jquery-2.1.0.js"></script>
+		<script>
+$(document).ready(function(){
 
-	  </style>
+// when hover over the selected image change the opacity to 1  
+$('.photosmo').hover(  
+   function(){  
+      $(this).find('img').stop().fadeTo('fast', 0.4);  
+   },  
+   function(){  
+      $(this).find('img').stop().fadeTo('fast', 1);  
+   });  
+  
+});  
+</script>
+		<style type="text/css">
+		</style>
 	</head>
 	
 	<body>
@@ -209,7 +223,9 @@
 		</div>
 		<div class="col-md-3">
 			<div class="picturebox">
-				<img src="imghome12.jpg" alt="">
+				<div class = "photosmo">
+					<img src="imghome12.jpg" alt="">
+				</div>
 			</div>
 		</div>
 	</div>
