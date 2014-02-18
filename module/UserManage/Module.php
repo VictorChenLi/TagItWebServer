@@ -54,6 +54,17 @@ class Module implements AutoloaderProviderInterface
     						$resultSetPrototype->setArrayObjectPrototype(new UserProfile());
     						return new TableGateway('profile', $dbAdapter, null, $resultSetPrototype);
     					},
+    					'UserManage\Model\AccountSecurityTable' =>  function($sm1) {
+    						$tableGateway = $sm1->get('AccountSecurityTableGateway');
+    						$table = new AccountSecurityTable($tableGateway);
+    						return $table;
+    					},
+    					'AccountSecurityTableGateway' => function ($sm1) {
+    						$dbAdapter = $sm1->get('Zend\Db\Adapter\Adapter');
+    						$resultSetPrototype = new ResultSet();
+    						$resultSetPrototype->setArrayObjectPrototype(new AccountSecurity());
+    						return new TableGateway('Account', $dbAdapter, null, $resultSetPrototype);
+    					},
     			),
     	);
     }
