@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="16" version="2.0">
 <workbenchAdvisor/>
-<window height="712" width="1259" x="11" y="65">
+<window height="781" maximized="true" width="1280" x="0" y="19">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -17,7 +17,8 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="70" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="com.aptana.editor.css" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.aptana.editor.js" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.aptana.editor.css" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.aptana.editor.html" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -29,40 +30,25 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="com.aptana.editor.html" name="index.html" partName="index.html" title="index.html" tooltip="/Users/amirmotahari/Desktop/TagItWebServer/public/Landing Page/index.html" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/amirmotahari/Desktop/TagItWebServer/public/Landing%20Page/index.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1046" selectionTopPixel="240"/>
-</editor>
-<editor id="com.aptana.editor.html" name="loginpage.html" partName="loginpage.html" title="loginpage.html" tooltip="/Users/amirmotahari/Desktop/TagItWebServer/public/Landing Page/loginpage.html" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/amirmotahari/Desktop/TagItWebServer/public/Landing%20Page/loginpage.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="862" selectionTopPixel="0"/>
-</editor>
-<editor id="com.aptana.editor.html" name="signuppage.html" partName="signuppage.html" title="signuppage.html" tooltip="/Users/amirmotahari/Desktop/TagItWebServer/public/Landing Page/signuppage.html" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/amirmotahari/Desktop/TagItWebServer/public/Landing%20Page/signuppage.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="812" selectionTopPixel="226"/>
-</editor>
-<editor id="com.aptana.editor.css" name="landing-page.css" partName="landing-page.css" title="landing-page.css" tooltip="/Users/amirmotahari/Desktop/TagItWebServer/public/Landing Page/css/landing-page.css" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/amirmotahari/Desktop/TagItWebServer/public/Landing%20Page/css/landing-page.css"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="411" selectionTopPixel="366"/>
-</editor>
-<editor activePart="true" focus="true" id="com.aptana.editor.html" name="popup test.html" partName="popup test.html" title="popup test.html" tooltip="/Users/amirmotahari/Desktop/popup test.html" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/amirmotahari/Desktop/popup%20test.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5604" selectionTopPixel="1785"/>
+<editor activePart="true" focus="true" id="com.aptana.editor.html" name="index.html" partName="index.html" title="index.html" tooltip="/Users/amirmotahari/Desktop/TagItWebServer/public/Landing_Page/index.html" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/amirmotahari/Desktop/TagItWebServer/public/Landing_Page/index.html"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="697" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
-<view id="com.aptana.terminal.views.terminal" partName="Terminal"/>
+<view id="com.aptana.terminal.views.terminal" partName="Terminal">
+<viewState>
+<title>Terminal</title>
+<workingDirectory>/Users/amirmotahari</workingDirectory>
+</viewState>
+</view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
@@ -141,7 +127,7 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.19966443" ratioLeft="238" ratioRight="954" relationship="2" relative="left"/>
+<info part="org.eclipse.ui.editorss" ratio="0.178881" ratioLeft="227" ratioRight="1042" relationship="2" relative="left"/>
 <info folder="true" part="terminalArea" ratio="0.75" ratioLeft="492" ratioRight="164" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
@@ -171,94 +157,16 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" uri="file:/Users/amirmotahari/Desktop/TagItWebServer/public/Landing%20Page/index.html"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" uri="file:/Users/amirmotahari/Desktop/TagItWebServer/public/Landing%20Page/loginpage.html"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" uri="file:/Users/amirmotahari/Desktop/TagItWebServer/public/Landing%20Page/signuppage.html"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.css" uri="file:/Users/amirmotahari/Desktop/TagItWebServer/public/Landing%20Page/css/landing-page.css"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" path="/popuptest/index.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" path="/pop/index.html"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" uri="file:/Users/amirmotahari/Desktop/popup%20test.html"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" uri="file:/Users/amirmotahari/Desktop/TagItWebServer/public/Landing_Page/index.html"/>
 </editors>
 <item historyLabel="index.html" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="loginpage.html" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="signuppage.html" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
 <item historyLabel="index.html" index="0">
-<position info="not_deleted" x="0" y="0"/>
+<position info="not_deleted" x="700" y="0"/>
 </item>
-<item historyLabel="loginpage.html" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="loginpage.html" index="1">
-<position info="not_deleted" x="1482" y="979"/>
-</item>
-<item historyLabel="signuppage.html" index="2">
-<position info="not_deleted" x="2226" y="0"/>
-</item>
-<item historyLabel="index.html" index="0">
-<position info="not_deleted" x="647" y="51"/>
-</item>
-<item historyLabel="loginpage.html" index="1">
-<position info="not_deleted" x="1437" y="0"/>
-</item>
-<item historyLabel="signuppage.html" index="2">
-<position info="not_deleted" x="1440" y="0"/>
-</item>
-<item historyLabel="loginpage.html" index="1">
-<position info="not_deleted" x="862" y="0"/>
-</item>
-<item historyLabel="signuppage.html" index="2">
-<position info="not_deleted" x="812" y="0"/>
-</item>
-<item historyLabel="index.html" index="0">
-<position info="not_deleted" x="647" y="51"/>
-</item>
-<item historyLabel="landing-page.css" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="index.html" index="0">
-<position info="not_deleted" x="1046" y="0"/>
-</item>
-<item historyLabel="loginpage.html" index="1">
-<position info="not_deleted" x="862" y="0"/>
-</item>
-<item historyLabel="index.html | popuptest" index="4">
-<position info="not_deleted" x="5604" y="0"/>
-</item>
-<item historyLabel="landing-page.css" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="index.html | popuptest" index="4">
-<position info="not_deleted" x="5604" y="0"/>
-</item>
-<item historyLabel="landing-page.css" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="index.html | pop" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="landing-page.css" index="3">
-<position info="not_deleted" x="411" y="0"/>
-</item>
-<item historyLabel="index.html" index="0">
-<position info="not_deleted" x="1046" y="0"/>
-</item>
-<item historyLabel="loginpage.html" index="1">
-<position info="not_deleted" x="862" y="0"/>
-</item>
-<item historyLabel="signuppage.html" index="2">
-<position info="not_deleted" x="812" y="0"/>
-</item>
-<item historyLabel="landing-page.css" index="3">
-<position info="not_deleted" x="411" y="0"/>
-</item>
-<item active="true" historyLabel="popup test.html" index="6">
-<position info="not_deleted" x="5604" y="0"/>
+<item active="true" historyLabel="index.html" index="0">
+<position info="not_deleted" x="696" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -266,9 +174,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="left"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -276,11 +181,43 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="terminalArea"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="index.html" tooltip="/Users/amirmotahari/Desktop/TagItWebServer/public/Landing_Page/index.html">
+<persistable uri="file:/Users/amirmotahari/Desktop/TagItWebServer/public/Landing_Page/index.html"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="loginpage.html" tooltip="/Users/amirmotahari/Desktop/TagItWebServer/public/Landing_Page/loginpage.html">
+<persistable uri="file:/Users/amirmotahari/Desktop/TagItWebServer/public/Landing_Page/loginpage.html"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="Index.html" tooltip="/Users/amirmotahari/Desktop/Index.html">
+<persistable uri="file:/Users/amirmotahari/Desktop/Index.html"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" name="jquery-2.1.0.js" tooltip="/Users/amirmotahari/Desktop/TagItWebServer/public/Profile Page/jquery-2.1.0.js">
+<persistable uri="file:/Users/amirmotahari/Desktop/TagItWebServer/public/Profile%20Page/jquery-2.1.0.js"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="index.html" tooltip="/Users/amirmotahari/Desktop/TagItWebServer/public/Profile Page/index.html">
+<persistable uri="file:/Users/amirmotahari/Desktop/TagItWebServer/public/Profile%20Page/index.html"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.css" name="blah.css" tooltip="/Users/amirmotahari/Desktop/blah.css">
+<persistable uri="file:/Users/amirmotahari/Desktop/blah.css"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="template.html" tooltip="/Users/amirmotahari/Desktop/template.html">
+<persistable uri="file:/Users/amirmotahari/Desktop/template.html"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="template.html" tooltip="/Users/amirmotahari/Desktop/TagItWebServer/public/template.html">
+<persistable uri="file:/Users/amirmotahari/Desktop/TagItWebServer/public/template.html"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="profile.html" tooltip="/Users/amirmotahari/Desktop/TagItWebServer/public/Profile Page/profile.html">
+<persistable uri="file:/Users/amirmotahari/Desktop/TagItWebServer/public/Profile%20Page/profile.html"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.css" name="bootstrap.css" tooltip="/Users/amirmotahari/Desktop/TagItWebServer/public/Landing_Page/css/bootstrap.css">
+<persistable uri="file:/Users/amirmotahari/Desktop/TagItWebServer/public/Landing_Page/css/bootstrap.css"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="signuppage.html" tooltip="/Users/amirmotahari/Desktop/TagItWebServer/public/Landing_Page/signuppage.html">
+<persistable uri="file:/Users/amirmotahari/Desktop/TagItWebServer/public/Landing_Page/signuppage.html"/>
+</file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="popup test.html" tooltip="/Users/amirmotahari/Desktop/popup test.html">
 <persistable uri="file:/Users/amirmotahari/Desktop/popup%20test.html"/>
 </file>
@@ -292,18 +229,6 @@
 </file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.css" name="landing-page.css" tooltip="/Users/amirmotahari/Desktop/TagItWebServer/public/Landing Page/css/landing-page.css">
 <persistable uri="file:/Users/amirmotahari/Desktop/TagItWebServer/public/Landing%20Page/css/landing-page.css"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="signuppage.html" tooltip="/Users/amirmotahari/Desktop/TagItWebServer/public/Landing Page/signuppage.html">
-<persistable uri="file:/Users/amirmotahari/Desktop/TagItWebServer/public/Landing%20Page/signuppage.html"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="loginpage.html" tooltip="/Users/amirmotahari/Desktop/TagItWebServer/public/Landing Page/loginpage.html">
-<persistable uri="file:/Users/amirmotahari/Desktop/TagItWebServer/public/Landing%20Page/loginpage.html"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="index.html" tooltip="/Users/amirmotahari/Desktop/TagItWebServer/public/Landing Page/index.html">
-<persistable uri="file:/Users/amirmotahari/Desktop/TagItWebServer/public/Landing%20Page/index.html"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="index copy.html" tooltip="/Users/amirmotahari/Desktop/TagItWebServer/public/Landing Page/index copy.html">
-<persistable uri="file:/Users/amirmotahari/Desktop/TagItWebServer/public/Landing%20Page/index%20copy.html"/>
 </file>
 </mruList>
 </workbench>
