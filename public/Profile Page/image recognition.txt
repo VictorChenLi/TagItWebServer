@@ -1,0 +1,15 @@
+Image Recognition
+
+--> Ideally, we'd have a program which automatically finds items of interest (puts boxes around them)
+Otherwise: user manually creates the boxes
+--> Once an item is selected in the image, the user inputs the brand (e.g., H&M, Guess, etc.) and the article of clothing (e.g., dress, watch, etc.)
+--> Our program then finds the correct link using both the text input (brand + article) and the image selected
+
+For our purposes, the image recognition software should do the following (Easiest down to most difficult):
+Compare the colour (Note: Hue may vary based on type of lighting (natural, fake), camera type, lightness may vary based on amount of light)
+Compare the pattern/texture (Note: May be hard to see if far enough away)
+Compare large features (Is it a dress or a bag)
+Compare more subtle features
+
+
+
