@@ -10,10 +10,32 @@
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.css.map">
 		<link rel="stylesheet" href="bootstrap/fonts/glyphicons-halflings-regular.eot">
 		<link rel="stylesheet" href="bootstrap/js/bootstrap.js">
+		<script src="jquery-2.1.0.js"></script>
+		<script>
+$(document).ready(function(){
+
+// when hover over the selected image change the opacity to 1  
+$('.photosmo').hover(  
+   function(){  
+      $(this).find('img').stop().fadeTo('fast', 0.4);
+   },  
+   function(){  
+      $(this).find('img').stop().fadeTo('fast', 1);  
+   });  
+  
+});
+function jumpUp() {
+   	window.scroll(0,0); // horizontal and vertical scroll targets
+}
+</script>
+		<style type="text/css">
+		body {background-color:#fafafa;}
+		</style>
+		
 	</head>
 	
 	<body>
-	
+
 	<!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
@@ -31,7 +53,7 @@
             <li><a href="index.html">HOME</a></li>
 			<li><a href="#"></a></li>
 			<li><a href="#"></a></li>
-            <li class="active"><a href="#">TRENDING</a></li>
+            <li class="active"><a href="javascript:jumpUp()">TRENDING</a></li>
 			<li><a href="#"></a></li>
 			<li><a href="#"></a></li>
             <li><a href="profile.html">PROFILE</a></li>
@@ -43,135 +65,201 @@
       </div>
     </div>
 	
+	<!--
 	
+	<div class="container" >
+		<div class= "col-md-12" style="background: #888;">
+		<br></br>
+		This will just be a little pop up describing the trending page
+		<br></br>
+		</div>
+	</div>
+	
+	-->
+	
+	<div class="container" >
+		
+		<div class="col-md-3">
+			<div class="picturebox" style="background:#FFF url('imghome1.jpg')">
+				<!--  <img src="imghome1.jpg" alt="">  -->
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="picturebox">
+				<img src="imghome2.jpg" alt="">
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="picturebox">
+				<img src="imghome3.jpg" alt="">
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="picturebox">
+				<img src="imghome4.jpg" alt="">
+			</div>
+		</div>
+	</div>
+ 
+	<div class="container" style="background: #FBFBFB">
+		<div class="emptybox">
+		empty
+		</div>
+	</div>
+  
+	<div class="container" >
+		<div class="col-md-3">
+			<div class="picturebox">
+				<img src="imghome5.jpg" alt="">
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="picturebox">
+				<img src="imghome6.jpg" alt="">
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="picturebox">
+				<img src="imghome7.jpg" alt="">
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="picturebox">
+				<img src="imghome8.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	
+	<div class="container" >
+		<div class="emptybox">
+		empty
+		</div>
+	</div>
+  
+	<div class="container" >
+		<div class="col-md-3">
+			<div class="picturebox">
+				<img src="imghome9.jpg" alt="">
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="picturebox">
+				<img src="imghome10.jpg" alt="">
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="picturebox">
+				<img src="imghome11.jpg" alt="">
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="picturebox">
+				<img src="imghome12.jpg" alt="">
+			</div>
+		</div>
+	</div>
+  
+	<div class="container" >
+		<div class="emptybox">
+		empty
+		</div>
+	</div>
+  
+	<div class="container" >
+		<div class="col-md-3">
+			<div class="picturebox">
+				<img src="imghome1.jpg" alt="">
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="picturebox">
+				<img src="imghome2.jpg" alt="">
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="picturebox">
+				<img src="imghome3.jpg" alt="">
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="picturebox">
+				<img src="imghome4.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	
+	<div class="container" >
+		<div class="emptybox">
+		empty
+		</div>
+	</div>
+	
+	<div class="container" >
+		<div class="col-md-3">
+			<div class="picturebox">
+				<img src="imghome5.jpg" alt="">
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="picturebox">
+				<img src="imghome6.jpg" alt="">
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="picturebox">
+				<img src="imghome7.jpg" alt="">
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="picturebox">
+				<img src="imghome8.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	
+	<div class="container" >
+		<div class="emptybox">
+		empty
+		</div>
+	</div>
+	
+	<div class="container" >
+		<div class="col-md-3">
+			<div class="picturebox">
+				<img src="imghome9.jpg" alt="">
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="picturebox">
+				<img src="imghome10.jpg" alt="">
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="picturebox">
+				<img src="imghome11.jpg" alt="">
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="picturebox">
+				<div class = "photosmo">
+					<img src="imghome12.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+  
 	<div class="container">
+		<div class="emptybox">
+		empty
+		</div>
+	</div>
+  
+		<div class="container">
   			
-		<div class="form-group">
-			<label for="exampleInputPassword1"></label>
-			<input type="text" class="form-control" id="exampleInputPassword1" placeholder="<br><br><br>">
-		</div>
-		
-		<div class="form-group">
-			<label for="exampleInputPassword1"></label>
-			<input type="text" class="form-control" id="exampleInputPassword1" placeholder="<br><br><br>">
-		</div>
-		
-		<div class="form-group">
-			<label for="exampleInputPassword1"></label>
-			<input type="text" class="form-control" id="exampleInputPassword1" placeholder="<br><br><br>">
-		</div>
-		
-		<div class="form-group">
-			<label for="exampleInputPassword1"></label>
-			<input type="text" class="form-control" id="exampleInputPassword1" placeholder="<br><br><br>">
-		</div>
-		
-		<div class="form-group">
-			<label for="exampleInputPassword1"></label>
-			<input type="text" class="form-control" id="exampleInputPassword1" placeholder="<br><br><br>">
-		</div>
-		
-		<div class="form-group">
-			<label for="exampleInputPassword1"></label>
-			<input type="text" class="form-control" id="exampleInputPassword1" placeholder="<br><br><br>">
-		</div>
-		
-		<div class="form-group">
-			<label for="exampleInputPassword1"></label>
-			<input type="text" class="form-control" id="exampleInputPassword1" placeholder="<br><br><br>">
-		</div>
-		
-		<div class="form-group">
-			<label for="exampleInputPassword1"></label>
-			<input type="text" class="form-control" id="exampleInputPassword1" placeholder="<br><br><br>">
-		</div>
-		
-		<div class="form-group">
-			<label for="exampleInputPassword1"></label>
-			<input type="text" class="form-control" id="exampleInputPassword1" placeholder="<br><br><br>">
-		</div>
-		
-		<div class="form-group">
-			<label for="exampleInputPassword1"></label>
-			<input type="text" class="form-control" id="exampleInputPassword1" placeholder="<br><br><br>">
-		</div>
-		
-		<div class="form-group">
-			<label for="exampleInputPassword1"></label>
-			<input type="text" class="form-control" id="exampleInputPassword1" placeholder="<br><br><br>">
-		</div>
-		
-		<div class="form-group">
-			<label for="exampleInputPassword1"></label>
-			<input type="text" class="form-control" id="exampleInputPassword1" placeholder="<br><br><br>">
-		</div>
-	
-		<div class="form-group">
-			<label for="exampleInputPassword1"></label>
-			<input type="text" class="form-control" id="exampleInputPassword1" placeholder="<br><br><br>">
-		</div>
-		
-		<div class="form-group">
-			<label for="exampleInputPassword1"></label>
-			<input type="text" class="form-control" id="exampleInputPassword1" placeholder="<br><br><br>">
-		</div>
-		
-		<div class="form-group">
-			<label for="exampleInputPassword1"></label>
-			<input type="text" class="form-control" id="exampleInputPassword1" placeholder="<br><br><br>">
-		</div>
-		
-		<div class="form-group">
-			<label for="exampleInputPassword1"></label>
-			<input type="text" class="form-control" id="exampleInputPassword1" placeholder="<br><br><br>">
-		</div>
-		
-		<div class="form-group">
-			<label for="exampleInputPassword1"></label>
-			<input type="text" class="form-control" id="exampleInputPassword1" placeholder="<br><br><br>">
-		</div>
-		
-		<div class="form-group">
-			<label for="exampleInputPassword1"></label>
-			<input type="text" class="form-control" id="exampleInputPassword1" placeholder="<br><br><br>">
-		</div>
-		
-		<div class="form-group">
-			<label for="exampleInputPassword1"></label>
-			<input type="text" class="form-control" id="exampleInputPassword1" placeholder="<br><br><br>">
-		</div>
-		
-		<div class="form-group">
-			<label for="exampleInputPassword1"></label>
-			<input type="text" class="form-control" id="exampleInputPassword1" placeholder="<br><br><br>">
-		</div>
-		
-		<div class="form-group">
-			<label for="exampleInputPassword1"></label>
-			<input type="text" class="form-control" id="exampleInputPassword1" placeholder="<br><br><br>">
-		</div>
-		
-		<div class="form-group">
-			<label for="exampleInputPassword1"></label>
-			<input type="text" class="form-control" id="exampleInputPassword1" placeholder="<br><br><br>">
-		</div>
-		
-		<div class="form-group">
-			<label for="exampleInputPassword1"></label>
-			<input type="text" class="form-control" id="exampleInputPassword1" placeholder="<br><br><br>">
-		</div>
-		
-		<div class="form-group">
-			<label for="exampleInputPassword1"></label>
-			<input type="text" class="form-control" id="exampleInputPassword1" placeholder="<br><br><br>">
-		</div>
-	
-		<div class="footer">
-			<p>&copy; Dabbl.it 2014</p>
-		</div>
-	
-	</div> <!-- /container -->
-	
+			<div class="footer">
+				<p>&copy; Dabbl.it 2014</p>
+			</div>
+		</div> <!-- /container -->
 	</body>
 	
 </html>
